@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextStyle.H4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="@integer/count_line_1"
+        tools:text="Title"
+        tools:visibility="visible"
+        android:layout_marginTop="@dimen/dp_8"/>
+
+    <TextView
+        android:id="@+id/messageUser"
+        style="@style/TextStyle.P"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/message_icon"
+        android:drawablePadding="@dimen/dp_10"
+        android:ellipsize="end"
+        android:lines="3"
+        android:layout_marginTop="@dimen/dp_36"
+        tools:text="Text message"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dateMessage"
+        style="@style/TextStyle.P_small"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_gravity="end"
+        tools:text="20/03/2023"
+        tools:visibility="visible"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+</FrameLayout>
